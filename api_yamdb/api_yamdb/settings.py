@@ -15,6 +15,9 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'api_yamdb.apps.ApiConfig',
+    'api_yamdb.apps.TitlesConfig',
+    'api_yamdb.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
