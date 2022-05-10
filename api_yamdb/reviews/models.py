@@ -48,7 +48,10 @@ class Title(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=30)
     year = models.PositiveIntegerField()
-    description = models.TextField(blank=True)
+    description = models.TextField(
+        blank=True,
+        null=True,
+        )
     genre = models.ManyToManyField(
         Genre,
         blank=True,
