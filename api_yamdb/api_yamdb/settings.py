@@ -15,9 +15,8 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'api_yamdb.apps.ApiConfig',
-    'api_yamdb.apps.TitlesConfig',
-    'api_yamdb.apps.UsersConfig',
+    'api',
+    'reviews',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -104,3 +103,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'),)
+
+AUTH_USER_MODEL = 'reviews.User'
